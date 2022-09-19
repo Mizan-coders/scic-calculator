@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIC Calculator</title>
+    <link rel="shortcut icon" href="scic-calculator.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200 mx-1 sm:mx-5">
+    
+    <header class="bg-blue-800 text-slate-200 flex flex-col items-center gap-3 py-12 my-1 sm:my-5 rounded-md">
+        <h1 class="text-4xl font-semibold text-center">SCIC Calculator</h1>
+        <p class="max-w-xl text-center px-5">
+            SCIC Calculator is made to calculate the scic criteria of "Complete Web Development Course by Programming Hero". The basic criteria is average 50 marks and at least 50% in every assignment.
+        </p>
+        <div>
+            <label class="text-xl font-semibold" for="">Calculate <input class="w-12 py-1 text-center text-slate-900 rounded" type="text" value="12" oninput="assignmentGrid()" id="assignment-amount"> Assignments</label>
+        </div>
+    </header>
+
+    <main>
+        <section class="p-5 mx-auto max-w-5xl rounded-md bg-violet-900 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="assignment-container"></section>
+        <section>
+            <div>
+                <button class="bg-green-700 text-white font-semibold px-5 py-2 rounded-md block mx-auto my-1 sm:my-5 border border-slate-200 active:border-green-700" onclick="calculate()">Calculate</button>
+            </div>
+            <div class="max-w-5xl mx-auto bg-teal-700 text-white rounded-md px-5 py-5 sm:py-8" id="result"></div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-700 rounded-md my-1 sm:my-5">
+        <p class="text-white text-center py-5 font-serif">Coded by '<a class="italic text-lime-400" href="https://www.facebook.com/mizanupwork" target="_blank">Mizanur Rahman</a>'</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
